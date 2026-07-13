@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frontier AI safety policy matrix</title>
+<style>
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1a1a1a;max-width:1100px;margin:40px auto;padding:0 24px;line-height:1.5;}
+  h1{font-size:22px;font-weight:600;margin-bottom:6px;}
+  p.note{color:#555;font-size:14px;margin-top:0;}
+  table{border-collapse:collapse;font-size:14px;margin-top:24px;}
+  th.rot{height:200px;vertical-align:bottom;padding:6px 2px;border-bottom:2px solid #333;}
+  th.rot > div{writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;font-weight:600;margin:0 auto;}
+  th.corner{text-align:left;vertical-align:bottom;padding:6px 12px;border-bottom:2px solid #333;font-weight:600;}
+  td.name{text-align:left;padding:7px 12px;white-space:nowrap;border-bottom:1px solid #e2e2e2;}
+  td.name a{color:#1a56db;text-decoration:none;}
+  td.name a:hover{text-decoration:underline;}
+  td.mark{text-align:center;border-bottom:1px solid #e2e2e2;padding:7px 0;min-width:30px;}
+  tr:nth-child(even) td{background:#fafafa;}
+  .dot{display:inline-block;width:12px;height:12px;border-radius:50%;background:#22a24d;}
+  caption{caption-side:bottom;color:#666;font-size:13px;font-style:italic;padding-top:12px;text-align:left;}
+</style>
+</head>
+<body>
+<h1>Inclusion of safety elements across frontier AI safety policies</h1>
+<p class="note">A green dot indicates the framework addresses that element. Framework names link to the source document.</p>
+
+<table>
+  <caption>Table 1: Inclusion of safety elements across frontier AI safety policies.</caption>
+  <thead>
+    <tr>
+      <th class="corner">Framework</th>
+      <th class="rot"><div>Capability Thresholds</div></th>
+      <th class="rot"><div>Model Weight Security</div></th>
+      <th class="rot"><div>Deployment Mitigations</div></th>
+      <th class="rot"><div>Conditions for Halting Deployment Plans</div></th>
+      <th class="rot"><div>Conditions for Halting Development Plans</div></th>
+      <th class="rot"><div>Capability Elicitation</div></th>
+      <th class="rot"><div>Evaluation Frequency</div></th>
+      <th class="rot"><div>Accountability</div></th>
+      <th class="rot"><div>Update Policy</div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name"><a href="https://www-cdn.anthropic.com/872c653b2d0501d6ab44cf87f43e1dc4853e4d37.pdf">Anthropic — Responsible Scaling Policy, v2.2</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf">OpenAI — Preparedness Framework, v2</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf">Google DeepMind — Frontier Safety Framework, v3.0</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://magic.dev/agi-readiness-policy">Magic — AGI Readiness Policy</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://clova.ai/en/tech-blog/en-navers-ai-safety-framework-asf">Naver — AI Safety Framework</a></td>
+      <td class="mark"></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://web.archive.org/web/20250630201526/https://ai.meta.com/static-resource/meta-frontier-ai-framework/">Meta — Frontier AI Framework</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://www.g42.ai/application/files/9517/3882/2182/G42_Frontier_Safety_Framework_Publication_Version.pdf">G42 — Frontier AI Safety Framework</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://cohere.com/security/the-cohere-secure-ai-frontier-model-framework-february-2025.pdf">Cohere — Secure AI Frontier Model Framework</a></td>
+      <td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"></td><td class="mark"></td><td class="mark"></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Microsoft-Frontier-Governance-Framework.pdf">Microsoft — Frontier Governance Framework</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://www.amazon.science/publications/amazons-frontier-model-safety-framework">Amazon — Frontier Model Safety Framework</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://data.x.ai/2025-08-20-xai-risk-management-framework.pdf">xAI — Risk Management Framework</a></td>
+      <td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"></td><td class="mark"></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+    <tr>
+      <td class="name"><a href="https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf">NVIDIA — Frontier AI Risk Assessment</a></td>
+      <td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"></td><td class="mark"></td><td class="mark"><span class="dot"></span></td><td class="mark"><span class="dot"></span></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
