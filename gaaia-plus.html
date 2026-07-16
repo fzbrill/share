@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Governance Under Acceleration</title>
+<title>GAAIA+</title>
 <style>
-  :root { --ink:#1a1a1a; --muted:#555; --rule:#e2e2e2; --accent:#7a1f1f; }
+  :root { color-scheme: light; --ink:#1a1a1a; --muted:#555; --rule:#e2e2e2; --accent:#7a1f1f; }
   * { box-sizing: border-box; }
   body {
     font-family: Georgia, 'Times New Roman', serif;
@@ -16,30 +16,14 @@
     padding: 3rem 1.4rem 5rem;
     background: #fdfdfc;
   }
-  h1 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin: 0 0 2rem;
-    letter-spacing: -0.01em;
-  }
-  h2 {
-    font-size: 1.35rem;
-    margin: 2.6rem 0 0.8rem;
-    letter-spacing: -0.01em;
-  }
-  h3 {
-    font-size: 1.1rem;
-    margin: 1.8rem 0 0.7rem;
-    color: var(--accent);
-  }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: 1.05rem; font-style: italic; margin: 0 0 2rem; }
+  h2 { font-size: 1.3rem; margin: 2.4rem 0 0.8rem; letter-spacing: -0.01em; }
+  h3 { font-size: 1.1rem; margin: 0 0 0.7rem; color: var(--accent); }
   p { margin: 0 0 1rem; }
   ul { margin: 0 0 1rem; padding-left: 1.3rem; }
   li { margin: 0 0 0.5rem; }
-  hr {
-    border: 0;
-    border-top: 1px solid var(--rule);
-    margin: 2.4rem 0;
-  }
+  a { color: var(--accent); }
   .block {
     background: #f6f4f0;
     border: 1px solid var(--rule);
@@ -47,41 +31,51 @@
     padding: 1.2rem 1.5rem 1.4rem;
     margin: 1.4rem 0 2rem;
   }
-  .block h3 { margin-top: 0; }
+  .strike-box {
+    border-left: 3px solid var(--accent);
+    padding-left: 1.1rem;
+    margin: 1.2rem 0;
+  }
   strong { font-weight: 700; }
   em { font-style: italic; }
-  .brief h3 { color: var(--ink); font-size: 1.2rem; }
-  footer {
-    margin-top: 3rem;
-    padding-top: 1.2rem;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.85rem; }
 </style>
 </head>
 <body>
 
-<section class="brief">
-<h3>What GAAIA+ Needs to Become to Survive the Intelligence Explosion, and What That Costs</h3>
-<p>GAAIA+ is my fix-up of the Great American AI Act: mandatory participation for any frontier-capable firm, a public safety floor, and licensed independent auditors who check that every firm clears it. On a normal timeline it works. Under an intelligence explosion its slowest part, the floor-setting process, breaks first. Capabilities outrun the months-long public revision cycle, so audits keep certifying models against a bar written for systems two or three generations old, and the coordination-with-labs step turns into a channel for capture. To survive, GAAIA+ has to change in a few specific ways, and each change carries a real cost.</p>
-<p><strong>What it needs to become</strong></p>
+<h1>GAAIA+</h1>
+<p class="sub">A redesign of the Great American AI Act (discussion draft) for an accelerating capability curve</p>
+
+<p>GAAIA+ keeps the basic architecture of the <a href="https://obernolte.house.gov/sites/evo-subsites/obernolte.house.gov/files/evo-media-document/gaaia-discussion-draft-section-by-section-website.pdf">Great American AI Act discussion draft</a>: a federal standards body (CAISI), a market of licensed independent auditors, mandatory transparency and incident reporting, and whistleblower protections. It changes two things. First, it gives the safety floor real teeth and reshapes it so it can keep pace with fast-moving capabilities instead of falling a generation behind. Second, it strikes the draft's preemption of state AI law. The rest of this page describes those changes.</p>
+
+<h2>What stays</h2>
+<p>CAISI remains the federal body that sets standards and licenses auditors. Independent auditors still examine frontier developers and report to CAISI. Mandatory transparency, incident reporting, and whistleblower protections carry over, as does enforcement through licensing, revocation, and penalties.</p>
+
+<h2>The core change: a real floor that updates itself</h2>
+<p>In the discussion draft, large developers write their own risk frameworks and the auditors check whether a firm complied with the rules it wrote for itself. GAAIA+ replaces that self-graded standard with a government-set minimum floor that every frontier-capable firm must clear, and it makes participation mandatory for any firm capable of building a frontier model. To keep that floor from going stale as capabilities jump, the floor is redesigned as follows.</p>
+
+<div class="block">
+<h3>The redesigned framework</h3>
+<p><strong>The floor, now a staircase.</strong> The minimum standard is no longer a single bar but a published ladder of capability levels, each carrying escalating requirements.</p>
 <ul>
-<li><em>A staircase, not a bar.</em> Replace the single floor with a pre-published ladder of capability levels, each carrying heavier requirements, triggered automatically off eval results the way ASL levels work. The floor then moves at the speed of testing, not the speed of rulemaking.</li>
-<li><em>A default pause for the unanticipated.</em> A capability no rung foresaw does not inherit a pass; it pauses until it is evaluated and placed, with the burden on the firm holding the model.</li>
-<li><em>An emergency interim floor with a hard sunset.</em> On evidence of a serious risk the ladder does not cover, CAISI can impose an immediate binding requirement; it expires unless ratified through the full public process.</li>
-<li><em>Split control.</em> The ladder is set by a standing technical panel with independent outside experts, published in full and open to challenge in court; audits stay spread across several independent bodies; the whole authority sunsets. No single appointee can bend the floor.</li>
-<li><em>Guaranteed auditor access.</em> The auditors' access to frontier compute and model internals is locked in by law, so no lab can narrow it when competitive pressure rises.</li>
+<li><em>Measurement.</em> A defined battery of capability evaluations with published scoring, run or overseen by the auditors, plus mandatory independent red-teaming. This both certifies a model and locates it on the ladder.</li>
+<li><em>Requirements by rung.</em> Lower rungs: weight security, incident reporting. Middle rungs (for example, meaningful cyber-offense capability or long-horizon autonomy): independent red-team sign-off, higher weight security, deployment limits. Top rungs (for example, bioweapon uplift, or a model that attempts to evade oversight in testing): no external deployment until specified safeguards are demonstrated, and a pause until then.</li>
 </ul>
-<p><strong>What that costs</strong></p>
-<ul>
-<li><em>A slow, heavy setup.</em> Writing the first full ladder, its thresholds, eval batteries, and red-team protocols is far more work than a single bar, and being slow at the start is dangerous in a fast takeoff. The likely accelerant is AI itself, which means the same force that threatens the framework is what would build it in time.</li>
-<li><em>A competitive penalty.</em> A default pause that fires on unverified capability will sometimes halt a US lab while a foreign rival keeps running. That is the direct, unavoidable cost of putting verification ahead of speed.</li>
-<li><em>Concentrated power that can't be fully checked.</em> The pause and interim-floor powers are decisive by design, which means they can also pick winners or be leaned on. Pre-commitment, publication, the courts, and the sunset add friction, not a guarantee. The emergency power is the sharpest residual: the sunset limits how long it lasts, not what it can do while it is live.</li>
-<li><em>Dependence on eval science.</em> The whole staircase is only as good as the evaluations under it, which can be gamed, go stale, and lean on scarce expert red-teaming. The floor inherits every weakness of the measurements it stands on.</li>
-</ul>
-<p><strong>Bottom line.</strong> GAAIA+ can be made to survive acceleration, but only by becoming faster, more automatic, and more powerful, and the price is a heavier setup, a competitive penalty, and a concentration of power held in check by friction rather than by any guarantee. The claim here is not that this is safe. It is that it fails more slowly, more visibly, and more correctably than the alternatives.</p>
-</section>
+<p><strong>Automatic triggering.</strong> Crossing a rung is pre-committed. When eval results show a model crosses a threshold, that rung's requirements bind automatically, without a fresh rulemaking, so the floor updates at the speed of testing rather than the speed of legislation.</p>
+<p><strong>Setting and revising the ladder.</strong> CAISI writes the ladder in advance and revises the ladder itself on a regular schedule through an open, public process conducted in coordination with the frontier labs. The labs inform the ladder; they do not control it.</p>
+<p><strong>Stale-capability pause.</strong> A capability no existing rung anticipated does not inherit a pass from prior tests. It defaults to a pause until CAISI evaluates it and places it on the ladder, with the burden of proof on the firm holding the model.</p>
+<p><strong>Emergency interim floor.</strong> On evidence of a serious risk the ladder does not cover, surfaced through mandatory incident reports, auditor evaluations, or whistleblowers, CAISI may impose a binding interim requirement effective immediately. Each interim requirement carries a hard sunset and expires unless ratified through the full public process.</p>
+<p><strong>Control of the floor.</strong> The ladder and any change to it are set by a standing technical panel within CAISI that includes independent outside experts, published in full, and open to challenge in court. Audits stay distributed across several independent bodies. No single appointee can bend the floor.</p>
+<p><strong>Guaranteed auditor access.</strong> The auditors' access to frontier compute and model internals is guaranteed by law, so no lab can narrow it under competitive pressure.</p>
+</div>
+
+<h2>What GAAIA+ strikes: the state-law preemption</h2>
+<div class="strike-box">
+<p>The discussion draft's Section 121 preempts state and local laws that specifically target AI model development, sunsetting three years after enactment. <strong>GAAIA+ strikes it.</strong></p>
+</div>
+<p>Removing the preemption keeps the federal floor a floor rather than a ceiling. States retain the ability to regulate frontier model development, and common-law and tort remedies stay intact, so a federal standard cannot be used to shut down stronger action elsewhere or to strip people of their existing right to sue.</p>
+
+<footer>GAAIA+ is a personal redesign proposal built on the Great American AI Act discussion draft. It is not affiliated with the bill's sponsors.</footer>
 
 </body>
 </html>
